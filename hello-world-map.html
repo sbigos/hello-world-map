@@ -24,18 +24,6 @@ function initMap() {
   // The marker, positioned at Uluru
   var marker = new google.maps.Marker({position: uluru, map: map});
 }
-function updateGame() {
-    console.log('function UpdateGame() google-maps-step-03!');
-    var zoomLevel = gMap.getZoom()
-    var inBounds = false;
-
-    // Check if Canoe Bay, WI is in the currently displayed map
-    if (gMap.getBounds().contains({lat:45.3306,lng:-91.4918})) {
-        inBounds = true;
-    }
-
-    console.log("inBounds:"+inBounds+" zoomLevel:"+zoomLevel);
-}
     </script>
     <!--Load the API from the specified URL
     * The async attribute allows the browser to render the page while the API loads
